@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "785728970675",
+    "project_id": "bamx-app",
+    "storage_bucket": "bamx-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:785728970675:android:f9fb49181f4d811ebdf5c6",
+        "android_client_info": {
+          "package_name": "com.bravotec.firebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "785728970675-oklno2stq4bojeg4ersr5i400onlgc7s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAIO_Vo8VZVm_k2pYyqo4PFODxt-uCSVXk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "785728970675-oklno2stq4bojeg4ersr5i400onlgc7s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
