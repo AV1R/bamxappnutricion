@@ -18,8 +18,8 @@ class homepage : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_homepage)
+
         name=findViewById(R.id.welcome)
-        var currentEmail=Firebase.auth.currentUser?.email.toString()
         var currentId=Firebase.auth.currentUser?.uid.toString()
          getData(currentId)
     }
@@ -28,12 +28,13 @@ class homepage : AppCompatActivity() {
 
     fun verificateUser(){
         if(Firebase.auth.currentUser==null){
-            Toast.makeText(this, "Revalida!", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, "Revalida tu sesion!", Toast.LENGTH_SHORT).show()
 
-        }else{
+        }
+       /* else{
             Toast.makeText(this, "Usuario: ${Firebase.auth.currentUser?.email}", Toast.LENGTH_SHORT).show()
             Toast.makeText(this, "Usuario: ${Firebase.auth.currentUser?.uid}", Toast.LENGTH_SHORT).show()
-        }
+        }*/
     }
     //Función común para verificar validez de usuario en el ciclo de vida
     override fun onStart(){
