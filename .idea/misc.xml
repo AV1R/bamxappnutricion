@@ -3,15 +3,30 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/jagg9/OneDrive/Escritorio/Apps/Cars/cars/platforms/firebase/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2335" />
+        <entry key="..\:/Users/jagg9/OneDrive/Escritorio/Apps/Cars/cars/platforms/firebase/app/src/main/res/font/allerta.xml" value="0.12777777777777777" />
+        <entry key="..\:/Users/jagg9/OneDrive/Escritorio/Apps/Cars/cars/platforms/firebase/app/src/main/res/layout/activity_favs.xml" value="0.16" />
+        <entry key="..\:/Users/jagg9/OneDrive/Escritorio/Apps/Cars/cars/platforms/firebase/app/src/main/res/layout/activity_favs2.xml" value="0.25" />
         <entry key="..\:/Users/jagg9/OneDrive/Escritorio/Apps/Cars/cars/platforms/firebase/app/src/main/res/layout/activity_home.xml" value="0.2" />
-        <entry key="..\:/Users/jagg9/OneDrive/Escritorio/Apps/Cars/cars/platforms/firebase/app/src/main/res/layout/activity_homepage.xml" value="0.2" />
+        <entry key="..\:/Users/jagg9/OneDrive/Escritorio/Apps/Cars/cars/platforms/firebase/app/src/main/res/layout/activity_homepage.xml" value="0.264" />
+        <entry key="..\:/Users/jagg9/OneDrive/Escritorio/Apps/Cars/cars/platforms/firebase/app/src/main/res/layout/activity_info_nutri_activity.xml" value="0.25" />
+        <entry key="..\:/Users/jagg9/OneDrive/Escritorio/Apps/Cars/cars/platforms/firebase/app/src/main/res/layout/activity_info_nutri_actovity.xml" value="0.25" />
         <entry key="..\:/Users/jagg9/OneDrive/Escritorio/Apps/Cars/cars/platforms/firebase/app/src/main/res/layout/activity_macro_nutri.xml" value="0.25" />
         <entry key="..\:/Users/jagg9/OneDrive/Escritorio/Apps/Cars/cars/platforms/firebase/app/src/main/res/layout/activity_main.xml" value="0.2" />
         <entry key="..\:/Users/jagg9/OneDrive/Escritorio/Apps/Cars/cars/platforms/firebase/app/src/main/res/layout/activity_perfil.xml" value="0.25" />
+        <entry key="..\:/Users/jagg9/OneDrive/Escritorio/Apps/Cars/cars/platforms/firebase/app/src/main/res/layout/activity_recetas.xml" value="0.17916666666666667" />
         <entry key="..\:/Users/jagg9/OneDrive/Escritorio/Apps/Cars/cars/platforms/firebase/app/src/main/res/layout/activity_register.xml" value="0.259375" />
+        <entry key="..\:/Users/jagg9/OneDrive/Escritorio/Apps/Cars/cars/platforms/firebase/app/src/main/res/layout/activity_show_favs.xml" value="0.2359375" />
+        <entry key="..\:/Users/jagg9/OneDrive/Escritorio/Apps/Cars/cars/platforms/firebase/app/src/main/res/layout/activity_show_macros.xml" value="0.25" />
+        <entry key="..\:/Users/jagg9/OneDrive/Escritorio/Apps/Cars/cars/platforms/firebase/app/src/main/res/layout/activity_show_rec.xml" value="0.264" />
         <entry key="..\:/Users/jagg9/OneDrive/Escritorio/Apps/Cars/cars/platforms/firebase/app/src/main/res/layout/content_home.xml" value="0.11614583333333334" />
         <entry key="..\:/Users/jagg9/OneDrive/Escritorio/Apps/Cars/cars/platforms/firebase/app/src/main/res/layout/fragment_first.xml" value="0.11614583333333334" />
         <entry key="..\:/Users/jagg9/OneDrive/Escritorio/Apps/Cars/cars/platforms/firebase/app/src/main/res/layout/fragment_second.xml" value="0.11614583333333334" />
+        <entry key="..\:/Users/jagg9/OneDrive/Escritorio/Apps/Cars/cars/platforms/firebase/app/src/main/res/layout/row.xml" value="0.2" />
+        <entry key="..\:/Users/jagg9/OneDrive/Escritorio/Apps/Cars/cars/platforms/firebase/app/src/main/res/layout/rowcal.xml" value="0.264" />
+        <entry key="..\:/Users/jagg9/OneDrive/Escritorio/Apps/Cars/cars/platforms/firebase/app/src/main/res/layout/rowfavs.xml" value="0.24895833333333334" />
+        <entry key="..\:/Users/jagg9/OneDrive/Escritorio/Apps/Cars/cars/platforms/firebase/app/src/main/res/layout/rowmacros.xml" value="0.4" />
+        <entry key="..\:/Users/jagg9/OneDrive/Escritorio/Apps/Cars/cars/platforms/firebase/app/src/main/res/layout/rowrecs.xml" value="0.4" />
       </map>
     </option>
   </component>

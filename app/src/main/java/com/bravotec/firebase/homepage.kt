@@ -51,7 +51,7 @@ class homepage : AppCompatActivity() {
                 val ageDb=it.child("userAge").value
                 val emailDb=it.child("userEmail").value
                 name=findViewById(R.id.welcome)
-                    name.text="Hola ${nameDb.toString()}!"
+                    name.text="Bienvedid@ ${nameDb.toString()}"
 
             }else{
                 Toast.makeText(this,"User not found",Toast.LENGTH_SHORT).show()
@@ -62,7 +62,7 @@ class homepage : AppCompatActivity() {
     }
 
     fun goFavs(view:View?){
-        val intent=Intent(this,FavsActivity::class.java)
+        val intent=Intent(this,Favs::class.java)
         startActivity(intent)
     }
 

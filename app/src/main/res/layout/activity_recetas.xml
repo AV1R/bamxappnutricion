@@ -6,4 +6,40 @@
     android:layout_height="match_parent"
     tools:context=".recetasActivity">
 
+    <EditText
+        android:id="@+id/buscadorRec"
+        android:layout_width="339dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginBottom="32dp"
+        android:autofillHints=""
+        android:background="#FDF8F8"
+        android:backgroundTint="#FFF0F5"
+        android:ems="10"
+        android:hint="Buscador"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textColor="#FF5252"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/recyclerView_Macros"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView_Recs"
+        android:layout_width="352dp"
+        android:layout_height="608dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.473"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buscadorRec"
+        app:layout_constraintVertical_bias="1.0" />
 </androidx.constraintlayout.widget.ConstraintLayout>
