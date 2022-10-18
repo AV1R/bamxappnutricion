@@ -27,15 +27,18 @@
             android:exported="false" />
         <activity
             android:name=".MacroNutriActivity"
+            android:windowSoftInputMode="adjustPan"
             android:exported="false" />
         <activity
             android:name=".InfoNutriActivity"
+            android:windowSoftInputMode="adjustPan"
             android:exported="false" />
         <activity
             android:name=".perfilActivity"
             android:exported="false" />
         <activity
             android:name=".recetasActivity"
+            android:windowSoftInputMode="adjustPan"
             android:exported="false" />
         <activity
             android:name=".homepage"

@@ -3,6 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/User/StudioProjects/bamxappnutricion/app/src/main/res/drawable-v24/rounded_corner.xml" value="0.2985" />
+        <entry key="..\:/Users/User/StudioProjects/bamxappnutricion/app/src/main/res/layout/activity_info_nutri_activity.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/User/StudioProjects/bamxappnutricion/app/src/main/res/layout/activity_macro_nutri.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/User/StudioProjects/bamxappnutricion/app/src/main/res/layout/activity_recetas.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/jagg9/OneDrive/Escritorio/Apps/Cars/cars/platforms/firebase/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2335" />
         <entry key="..\:/Users/jagg9/OneDrive/Escritorio/Apps/Cars/cars/platforms/firebase/app/src/main/res/font/allerta.xml" value="0.12777777777777777" />
         <entry key="..\:/Users/jagg9/OneDrive/Escritorio/Apps/Cars/cars/platforms/firebase/app/src/main/res/layout/activity_favs.xml" value="0.16" />
@@ -43,7 +47,7 @@
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">
