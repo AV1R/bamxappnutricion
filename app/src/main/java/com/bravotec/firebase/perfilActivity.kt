@@ -25,7 +25,6 @@ class perfilActivity : AppCompatActivity() {
         setContentView(R.layout.activity_perfil)
         var currentId=Firebase.auth.currentUser?.uid.toString()
         getData(currentId)
-
     }
     //Funcion para obtener información del usuario
     fun getData(currentUser:String){

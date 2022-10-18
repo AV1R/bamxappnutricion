@@ -12,10 +12,6 @@ import org.json.JSONArray
 
 class RecAdapter(var jsonArray: JSONArray, var listener: recetasActivity): RecyclerView.Adapter<RecAdapter.RecViewHolder>() {
 
-    //1era cosa que hay que hacer
-    //View Holde
-    // es similar al binding: un objeto con referencia a los elementos de una lista.
-
     class RecViewHolder(itemView: View): RecyclerView.ViewHolder(itemView){
 
         var texto1_R: TextView
@@ -25,10 +21,7 @@ class RecAdapter(var jsonArray: JSONArray, var listener: recetasActivity): Recyc
         init{
             texto1_R=itemView.findViewById(R.id.rowtxt1)
             texto2_R=itemView.findViewById(R.id.rowtxt2)
-            img_R=itemView.findViewById(R.id.imageViewRec)
-
-
-
+            img_R=itemView.findViewById(R.id.imageViewF)
         }
     }
     //momento de creacion de una vista
@@ -36,10 +29,6 @@ class RecAdapter(var jsonArray: JSONArray, var listener: recetasActivity): Recyc
 //igual que con fragmentos inflamos la view
         val view= LayoutInflater.from(parent.context).inflate(R.layout.rowrecs,parent,false)
         view.setOnClickListener(listener)
-        /*val viewHolder=PerritoViewHolder(view)
-        viewHolder.boton.setOnClickListener{
-            Log.wtf("hola","Como estas desde perrito adapter")
-        }*/
         return RecViewHolder(view)
     }
     //momento de asociacion de vista con datos

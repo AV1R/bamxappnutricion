@@ -31,10 +31,6 @@ class homepage : AppCompatActivity() {
             Toast.makeText(this, "Revalida tu sesion!", Toast.LENGTH_SHORT).show()
 
         }
-       /* else{
-            Toast.makeText(this, "Usuario: ${Firebase.auth.currentUser?.email}", Toast.LENGTH_SHORT).show()
-            Toast.makeText(this, "Usuario: ${Firebase.auth.currentUser?.uid}", Toast.LENGTH_SHORT).show()
-        }*/
     }
     //Función común para verificar validez de usuario en el ciclo de vida
     override fun onStart(){

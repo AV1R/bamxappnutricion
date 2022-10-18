@@ -11,17 +11,11 @@ import org.json.JSONArray
 
 class CalAdapter(var jsonArray: JSONArray, var listener: InfoNutriActivity): RecyclerView.Adapter<CalAdapter.CalViewHolder>() {
 
-    //1era cosa que hay que hacer
-    //View Holde
-    // es similar al binding: un objeto con referencia a los elementos de una lista.
-
     class CalViewHolder(itemView: View): RecyclerView.ViewHolder(itemView){
 
         var texto1_C: TextView
         var texto2_C : TextView
         var img_C : ImageView
-
-        //var boton:Button
 
         init{
             texto1_C=itemView.findViewById(R.id.rowtxt1Cal)
@@ -36,15 +30,11 @@ class CalAdapter(var jsonArray: JSONArray, var listener: InfoNutriActivity): Rec
 //igual que con fragmentos inflamos la view
         val view= LayoutInflater.from(parent.context).inflate(R.layout.rowcal,parent,false)
         view.setOnClickListener(listener)
-        /*val viewHolder=PerritoViewHolder(view)
-        viewHolder.boton.setOnClickListener{
-            Log.wtf("hola","Como estas desde perrito adapter")
-        }*/
+
         return CalViewHolder(view)
     }
     //momento de asociacion de vista con datos
     override fun onBindViewHolder(holder: CalViewHolder, position: Int) {
-        // Log.wtf("POSITION","$position")
 
         val actual=jsonArray.getJSONObject(position)
         holder.texto1_C.text=actual.getString("ingrediente")
@@ -57,7 +47,6 @@ class CalAdapter(var jsonArray: JSONArray, var listener: InfoNutriActivity): Rec
 
     }
 
-    //obtener la cantidad de datos a mostrar
     override fun getItemCount(): Int {
         return jsonArray.length()
     }

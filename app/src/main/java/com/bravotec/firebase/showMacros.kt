@@ -20,14 +20,10 @@ class showMacros : AppCompatActivity() {
         val objeto = JSONObject(jsonTest3)
         datosRecibidos.put(objeto)
         val actual = datosRecibidos.getJSONObject(0)
-        Log.wtf("JSON", actual.getString("ingrediente"))
-        Log.wtf("JSON", actual.getString("carbohidratos"))
-
         nombre = actual.getString("ingrediente")
         anio = actual.getString("carbohidratos")
         img = actual.getString("img")
 
-        // Toast.makeText(this, intent.getStringExtra("datos2"), Toast.LENGTH_SHORT).show()
         val nombre_e = findViewById<TextView>(R.id.show_title)
         nombre_e.text = "Nombre: " + nombre
 
@@ -37,6 +33,6 @@ class showMacros : AppCompatActivity() {
 
         val img_e = findViewById<TextView>(R.id.show_img)
         img_e.text="URL: " + img
-
+//GENERAR EL LAYOUT BIEN CON SUS CONSTRAINS Y ASIGNAR LOS VALORES NECESARIOS DESDE AQUI
     }
 }

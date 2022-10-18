@@ -8,12 +8,12 @@
 
     <EditText
         android:id="@+id/buscadorRec"
-        android:layout_width="339dp"
-        android:layout_height="0dp"
+        android:layout_width="344dp"
+        android:layout_height="45dp"
         android:layout_marginStart="3dp"
-        android:layout_marginTop="4dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="3dp"
-        android:layout_marginBottom="32dp"
+        android:layout_marginBottom="40dp"
         android:autofillHints=""
         android:background="#FDF8F8"
         android:backgroundTint="#FFF0F5"
@@ -25,15 +25,16 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/recyclerView_Macros"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.557"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView_Recs"
-        android:layout_width="352dp"
-        android:layout_height="608dp"
+        android:layout_width="363dp"
+        android:layout_height="592dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="40dp"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="8dp"
         app:layout_constraintBottom_toBottomOf="parent"

@@ -84,8 +84,7 @@ class register : AppCompatActivity() {
         }else{
             Toast.makeText(this,"Campos vacios",Toast.LENGTH_LONG).show()
         }
-        //Si el usuario fue creado usar aqui firestore para crear una nueva coleccion con
-        //datos de usuario ingresado
+
     }
     //Funciones de navegación
     fun goBack(view: View?){

@@ -11,10 +11,6 @@ import org.json.JSONArray
 
 class MacrosAdapter(var jsonArray: JSONArray, var listener: MacroNutriActivity): RecyclerView.Adapter<MacrosAdapter.MacrosViewHolder>() {
 
-    //1era cosa que hay que hacer
-    //View Holde
-    // es similar al binding: un objeto con referencia a los elementos de una lista.
-
     class MacrosViewHolder(itemView: View): RecyclerView.ViewHolder(itemView){
 
         var texto1_M: TextView
@@ -39,8 +35,6 @@ class MacrosAdapter(var jsonArray: JSONArray, var listener: MacroNutriActivity):
     }
     //momento de asociacion de vista con datos
     override fun onBindViewHolder(holder: MacrosViewHolder, position: Int) {
-        // Log.wtf("POSITION","$position")
-
         val actual=jsonArray.getJSONObject(position)
         holder.texto1_M.text=actual.getString("ingrediente")
         holder.texto2_M.text=actual.getString("calorias")

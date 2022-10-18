@@ -32,9 +32,6 @@ class MainActivity : AppCompatActivity() {
         //Ir a menu
         val intent = Intent(this, homepage::class.java)
         intent.putExtra("nombre", email.text.toString())
-        //Descargar datos de firestore y enviarlos al menu
-        //intent.putExtra("nombre", name.text.toString())
-        //intent.putExtra("calificacion", age.text.toString())
         lanzador.launch(intent)
     }
     fun login(view:View?){
