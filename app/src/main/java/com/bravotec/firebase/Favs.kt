@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.view.View
+import android.widget.TextView
 import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.recyclerview.widget.GridLayoutManager
@@ -49,7 +50,7 @@ class Favs : AppCompatActivity() , View.OnClickListener {
                 var i=1
                 //Armar Json
                 while((cant+1) != i) {
-                    val actual="{'descripcion':'${it.child("$i").child("descripcion").value}','img':'${it.child("$i").child("img").value.toString()}','ingredientes':'${it.child("$i").child("ingredientes").value}','tiempo':'${it.child("$i").child("tiempo").value}','titulo':'${it.child("$i").child("titulo").value}','vegano':'${it.child("$i").child("vegano").value}'}"
+                    val actual="{'descripcion':'${it.child("$i").child("descripcion").value}','img':'${it.child("$i").child("img").value.toString()}','ingredientes':'${it.child("$i").child("ingredientes").value}','tiempo':'${it.child("$i").child("tiempo").value}','titulo':'${it.child("$i").child("titulo").value}','vegano':'${it.child("$i").child("vegano").value}','id':'${it.child("$i").child("id").value}'}"
                     val jsonObj= JSONObject(actual)
                     datosJson.put(jsonObj)
                     i++ // Actualizamos la condicion
@@ -91,6 +92,7 @@ class Favs : AppCompatActivity() , View.OnClickListener {
 
 
     }
+
 
 
 }

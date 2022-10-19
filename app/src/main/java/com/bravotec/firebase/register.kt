@@ -24,6 +24,7 @@ class register : AppCompatActivity() {
     }
 
     private lateinit var dbRef: DatabaseReference
+    private lateinit var database: DatabaseReference
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -104,6 +105,7 @@ class register : AppCompatActivity() {
             val user = UsersModel(userId, nameStr, ageStr, emailStr)
             dbRef.child(userId).setValue(user)
                 .addOnCanceledListener {
+
                     Toast.makeText(this, "Data Inserted Succeful", Toast.LENGTH_LONG).show()
                     email.text.clear()
                     password.text.clear()
@@ -114,6 +116,15 @@ class register : AppCompatActivity() {
                 }.addOnFailureListener { err ->
                     Toast.makeText(this, "Error ${err.message}", Toast.LENGTH_LONG).show()
                 }
+
+        database= FirebaseDatabase.getInstance().getReference("favs")
+        database.child(userId).setValue("Not favs")
+            .addOnCanceledListener {
+                Toast.makeText(this, "Data Favs", Toast.LENGTH_LONG).show()
+            }.addOnFailureListener{
+                Toast.makeText(this, "Error Inserted Favs", Toast.LENGTH_LONG).show()
+
+            }
 
     }
 

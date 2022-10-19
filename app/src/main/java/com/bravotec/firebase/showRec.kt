@@ -62,7 +62,6 @@ class showRec : AppCompatActivity() {
     }
 
     fun addFavs(view: View?){
-        val cont=1;
         var currentId = Firebase.auth.currentUser?.uid.toString()
         datosRecibidos = JSONArray()
         val jsonTest3 = intent.getStringExtra("datosJsonRecs")
@@ -75,7 +74,7 @@ class showRec : AppCompatActivity() {
         val ingre = actual.getString("ingredientes")
         val veg = actual.getString("vegano")
         val img = actual.getString("img")
-        val favItem = FavsModel(desc,img,ingre,tiempo,titulo,veg)
+
 
         //Conocer cantidad de datos
         database= FirebaseDatabase.getInstance().getReference("favs")
@@ -83,6 +82,8 @@ class showRec : AppCompatActivity() {
             //Utilizar un while o for e ir agregando a un json para utilizar la misma logica de la actividad del adapter
             if(it.exists()){
                 var cant=it.childrenCount.toInt()
+                val id=cant+1
+                val favItem = FavsModel(desc,img,ingre,tiempo,titulo,veg,id.toString())
                 //subir
                 database= FirebaseDatabase.getInstance().getReference("favs")
                 database.child(currentId).child("${cant+1}").setValue(favItem).addOnSuccessListener{
